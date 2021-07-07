@@ -1,0 +1,96 @@
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ヘッダー */
+header {
+  height: 50px;
+  background-color: #ff9a4b;
+}
+
+/* main-box領域 */
+main {
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main-box {
+  width: 300px;
+  margin-left: 30px;
+  padding: 10px;
+  background-color: #eee;
+  position: relative;
+}
+
+.main-box:first-child {
+  margin-left: 0;
+}
+
+/* main-box内画像のCSS */
+.step1 {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-position: bottom;
+  background-size: cover;
+}
+.step2 {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-position: bottom;
+  background-size: cover;
+}
+.step3 {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+/* ステップ番号 */
+.step-title {
+  position: absolute;
+  padding: 3px;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: #ff9a4b;
+}
+
+/* タイトル */
+h3 {
+  margin: 15px 0 5px;
+}
+
+/* フッター */
+footer {
+  height: 50px;
+  background-color: #aaa;
+}
+
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+main {
+  width: 100%;
+  margin: 50px auto;
+  display: block;
+}
+
+.main-box {
+  width: 90%;
+  margin: 20px auto 0;
+  padding: 10px;
+  position: relative;
+}
+
+.main-box:first-child {
+  margin-top: 0;
+  margin-left: auto;
+}
+
+}
